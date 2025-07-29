@@ -8,10 +8,10 @@ It’s a minimalist implementation focused on the core functionality of deliveri
 ## Tech Stack
 
 ### Backend
-- **Java 21** - Primary language
+- **Java 21** - Primary programming language
 - **Spring Boot 3.5.3** - Framework for building the backend API
 - **MySQL** - Relational database
-- **Docker** - Containerization for development and deployment
+- **Docker** - Containerization tool for development and deployment
 
 ### Frontend
 - **TypeScript** - Statically typed language
@@ -38,26 +38,52 @@ Frontend (TypeScript)     Mobile Apps (Swift/Kotlin)
 
 ### Course
 - Unique ID
-- Course name
+- Name
 - Description
 - Thumbnail (image)
 - URL slug
+- Lessons
 - Assigned teachers
+- Enrolled students
 - Management timestamps
 
 ### Lesson
 - Unique ID
-- PBelongs to a course
-- Lesson name
+- Name
 - Description
 - URL slug
 - Video URL
+- Belongs to a course
 - Management timestamps
 
-### Teacher (Profesor)
+### Teacher
 - Unique ID
 - Full name
 - Contact email
+- Username
+- Password
+- Role (TEACHER)
+- Biography
+- Specialization
+- Courses taught
+- Management timestamps
+
+### Student
+- Unique ID
+- Full name
+- Contact email
+- Username
+- Password
+- Role (STUDENT)
+- Enrolled courses
+- Management timestamps
+
+### Enrollment
+- Unique ID
+- Enrollment date
+- Completion date
+- Student
+- Course
 - Management timestamps
 
 
